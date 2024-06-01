@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>杨梦娇的生日礼物抽奖</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <audio id="background-music" src="music.mp3" loop autoplay></audio>
+    <div class="container">
+        <h1>杨梦娇的生日礼物抽奖</h1>
+        <div class="photo-wall">
+            <img src="photo1.jpg" alt="Photo 1" class="photo">
+            <img src="photo2.jpg" alt="Photo 2" class="photo">
+            <img src="photo3.jpg" alt="Photo 3" class="photo">
+        </div>
+        <div class="gift-box">
+            <img src="gift.png" alt="礼物盒" class="gift-img">
+            <button onclick="drawGift()">抽奖</button>
+        </div>
+        <div class="envelope-box" onclick="openEnvelope()">
+            <img src="envelope.png" alt="信封" class="envelope" id="envelope">
+        </div>
+        <div id="letter" class="letter">
+            <p>亲爱的杨梦娇，祝你生日快乐！</p>
+            <p>以下是你的礼物列表：</p>
+            <ul id="gift-list"></ul>
+        </div>
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
