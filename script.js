@@ -3,7 +3,7 @@ const gifts = ["口红", "盲盒", "键盘", "手镯", "儿子"];
 function drawGift() {
     const randomIndex = Math.floor(Math.random() * gifts.length);
     const selectedGift = gifts[randomIndex];
-    document.getElementById('result').innerText = `恭喜你抽中了：${selectedGift}！`;
+    document.getElementById('result').innerText = `恭喜你抽中了：儿子！`;
 }
 
 function openEnvelope() {
