@@ -1,4 +1,4 @@
-const gifts = ["礼物1", "礼物2", "礼物3", "礼物4", "礼物5"];
+const gifts = ["口红", "盲盒", "键盘", "手镯", "儿子"];
 
 function drawGift() {
     const randomIndex = Math.floor(Math.random() * gifts.length);
